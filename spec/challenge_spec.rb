@@ -26,7 +26,7 @@ RSpec.describe 'Challenge: ' do
     end
   end
 
-  xdescribe '#parse_bits' do
+  describe '#parse_bits' do
     context 'at any discernable time unit' do
       it 'converts a string of ones and zeros into dots and dashes' do
         expect(parse_bits('10101011101110111010101')).to eq('...---...')
